@@ -16,7 +16,7 @@ function displayHikeInfo() {
             // only populate title, and image
             document.getElementById("hikeName").innerHTML = hikeName;
             let imgEvent = document.querySelector(".hike-img");
-            imgEvent.src = "./images/" + hikeCode + ".jpg";
+            imgEvent.src = "../images/" + hikeCode + ".jpg";
         });
 }
 displayHikeInfo();
@@ -29,7 +29,6 @@ function saveHikeDocumentIDAndRedirect() {
 }
 
 function populateReviews() {
-    console.log("test");
     let hikeCardTemplate = document.getElementById("reviewCardTemplate");
     let hikeCardGroup = document.getElementById("reviewCardGroup");
 
